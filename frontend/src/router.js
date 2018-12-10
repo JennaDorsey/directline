@@ -1,6 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import LoginSignUp from "./views/users/LoginSignUp";
+import Login from "./views/users/Login";
+import SignUp from "./views/users/SignUp";
 
 Vue.use(Router);
 
@@ -21,6 +24,21 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/About.vue")
+    },
+    {
+      path: "/welcome",
+      name: "login-or-signup",
+      component: LoginSignUp
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: Login
+    },
+    {
+      path: "/signup",
+      name: "signup",
+      component: SignUp
     }
   ]
 });
