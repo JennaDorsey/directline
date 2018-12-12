@@ -4,6 +4,7 @@ import Home from "./views/Home.vue";
 import LoginSignUp from "./views/users/LoginSignUp";
 import Login from "./views/users/Login";
 import SignUp from "./views/users/SignUp";
+import { users, tasks, notifications, admin } from "./services/feathers";
 
 Vue.use(Router);
 
@@ -40,5 +41,40 @@ export default new Router({
       name: "signup",
       component: SignUp
     }
+    {
+      path: "/home",
+     name: "homescreen",
+     component: Home
+  },
+  {
+     path: "/users",
+     name: "users",
+     component: users
+  },
+  {
+    path: "/tasks",
+    name: "tasks",
+    component: tasks
+  }
+  {
+    path: "/notifications",
+    name: "notifications",
+    component: notifications
+    }
+    {
+    path: "/admin",
+    name: "admin",
+    component: admin
+  },
+  {
+    path: "/profile",
+    name: "profile",
+    component: Profile
+  },
+  {
+    path: "/todo",
+    name: "todo",
+    component: todo
+  }
   ]
 });
