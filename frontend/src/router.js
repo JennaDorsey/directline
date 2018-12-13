@@ -4,8 +4,14 @@ import Home from "./views/Home.vue";
 import LoginSignUp from "./views/users/LoginSignUp";
 import Login from "./views/users/Login";
 import SignUp from "./views/users/SignUp";
-import { users, notifications, admin } from "./services/feathers";
+//import { users, notifications, admin } from "./services/feathers";
+import notifications from "./views/tasks/notifications";
+import profile from "./views/tasks/profile";
 import tasks from "./views/users/tasks";
+import contactlist from "./views/users/contacts";
+
+//import { contactlist } from "./services/feathers";
+
 //import todo from "./views/tasks/todo";
 //import contactlist from "./views/users/contactlist";
 //import profile from "./views/tasks/profile";
@@ -50,11 +56,11 @@ export default new Router({
      name: "home",
      component: Home
   },
-  {
-     path: "/users",
-     name: "users",
-     component: users
-  },
+  // {
+  //    path: "/users",
+  //    name: "users",
+  //    component: users
+  // },
   {
     path: "/tasks",
     name: "tasks",
@@ -65,11 +71,21 @@ export default new Router({
     name: "notifications",
     component: notifications
     },
+  //   {
+  //   path: "/admin",
+  //   name: "admin",
+  //   component: admin
+  // },
+  {
+    path: "/profile",
+    name: "profile",
+    component: profile
+    },
     {
-    path: "/admin",
-    name: "admin",
-    component: admin
-  },
+      path: "/contacts",
+      name: "contacts",
+      component: contactlist
+      },
 
   ]
 });

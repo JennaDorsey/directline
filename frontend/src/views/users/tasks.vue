@@ -37,7 +37,7 @@
       ></v-text-field>
      
     
-      <v-btn xs4 xs-offset-5 color="secondary" to="/home">Login</v-btn>
+      <v-btn xs4 xs-offset-5 color="secondary" to="/contacts">Forward To:</v-btn>
     </form>
   </div>
 </template>

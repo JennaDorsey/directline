@@ -10,7 +10,7 @@
         <v-flex xs12>
           <v-btn xs4 xs-offset-5 color="primary" to="/login">Login</v-btn>
           <v-btn xs4 xs-offset-5 color="secondary" to="/signup">Signup</v-btn>
-          <v-btn fab dark small color="pink" to="/about">
+          <v-btn round dark small color="pink" to="/about">
             <v-icon dark>favorite</v-icon>
           </v-btn>
         </v-flex>
