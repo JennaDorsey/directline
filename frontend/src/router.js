@@ -40,10 +40,10 @@ export default new Router({
       path: "/signup",
       name: "signup",
       component: SignUp
-    }
+    },
     {
       path: "/home",
-     name: "homescreen",
+     name: "home",
      component: Home
   },
   {
@@ -55,26 +55,17 @@ export default new Router({
     path: "/tasks",
     name: "tasks",
     component: tasks
-  }
+  },
   {
     path: "/notifications",
     name: "notifications",
     component: notifications
-    }
+    },
     {
     path: "/admin",
     name: "admin",
     component: admin
   },
-  {
-    path: "/profile",
-    name: "profile",
-    component: Profile
-  },
-  {
-    path: "/todo",
-    name: "todo",
-    component: todo
-  }
+
   ]
 });
