@@ -4,7 +4,11 @@ import Home from "./views/Home.vue";
 import LoginSignUp from "./views/users/LoginSignUp";
 import Login from "./views/users/Login";
 import SignUp from "./views/users/SignUp";
-import { users, tasks, notifications, admin } from "./services/feathers";
+import { users, notifications, admin } from "./services/feathers";
+import tasks from "./views/users/tasks";
+//import todo from "./views/tasks/todo";
+//import contactlist from "./views/users/contactlist";
+//import profile from "./views/tasks/profile";
 
 Vue.use(Router);
 

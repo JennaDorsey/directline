@@ -77,7 +77,8 @@
         data-vv-name="group"
         required
       ></v-text-field>
-      <v-btn @click="submit" class="secondary">Submit</v-btn>
+      <v-btn xs4 xs-offset-5 color="secondary" to="/login">Signup</v-btn>
+      
     </form>
   </div>
 </template>
